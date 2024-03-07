@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HHJobsCalculator.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:HHJobsCalculator.WebApi.Controllers.JobsCalculatorController.CalculateJob(HHJobsCalculator.Core.Models.Engine.JobRequest)">
+            <summary>
+            Calculates total charge of a job to a customer 
+            </summary>
+            <param name="jobRequest">Job for calculation</param>
+            <returns>Calculation result</returns>
+        </member>
+    </members>
+</doc>

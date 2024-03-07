@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHJobsCalculator.WebApi", "HHJobsCalculator.WebApi\HHJobsCalculator.WebApi.csproj", "{6656B481-169C-490E-A255-52666DDC46E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHJobsCalculator.Core", "HHJobsCalculator.Core\HHJobsCalculator.Core.csproj", "{319AB77D-38D4-4E24-86F5-AFC8420E6367}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHJobsCalculator.Engine", "HHJobsCalculator.Engine\HHJobsCalculator.Engine.csproj", "{D212FCBA-CD37-40B3-8C05-6AB2D8B43A3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HHJobsCalculator.Tests", "HHJobsCalculator.Tests\HHJobsCalculator.Tests.csproj", "{FAF26041-C515-43A9-B967-0B5D6B49B896}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09599A7D-72DF-4DFF-BBE7-051493BF64DA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6656B481-169C-490E-A255-52666DDC46E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6656B481-169C-490E-A255-52666DDC46E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6656B481-169C-490E-A255-52666DDC46E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6656B481-169C-490E-A255-52666DDC46E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319AB77D-38D4-4E24-86F5-AFC8420E6367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319AB77D-38D4-4E24-86F5-AFC8420E6367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319AB77D-38D4-4E24-86F5-AFC8420E6367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319AB77D-38D4-4E24-86F5-AFC8420E6367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D212FCBA-CD37-40B3-8C05-6AB2D8B43A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D212FCBA-CD37-40B3-8C05-6AB2D8B43A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D212FCBA-CD37-40B3-8C05-6AB2D8B43A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D212FCBA-CD37-40B3-8C05-6AB2D8B43A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF26041-C515-43A9-B967-0B5D6B49B896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF26041-C515-43A9-B967-0B5D6B49B896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF26041-C515-43A9-B967-0B5D6B49B896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF26041-C515-43A9-B967-0B5D6B49B896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66B301D8-1FEA-4944-B126-AF717DD9ED2E}
+	EndGlobalSection
+EndGlobal
