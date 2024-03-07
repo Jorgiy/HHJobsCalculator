@@ -31,7 +31,7 @@ namespace HHJobsCalculator.Engine
 
             try
             {
-                var respone = new JobCalculationResult();
+                var result = new JobCalculationResult();
                 decimal total = 0.0M;
                 var marginMultiplier = jobRequest.ExtraMarginApplied ? ExtraAddedMarginMultiplier : BaseAddedMarginMultiplier;
 
@@ -43,20 +43,20 @@ namespace HHJobsCalculator.Engine
                     var cost = printItem.Value.Value + (printItem.TaxExtemptApplied ? 0 : printItem.Value.Value * SalesTaxMultiplier);
                     calculatedPrintItem.Cost = Math.Round(cost, 2, MidpointRounding.AwayFromZero);
 
-                    respone.CalculatedPrintItems.Add(calculatedPrintItem);
+                    result.CalculatedPrintItems.Add(calculatedPrintItem);
 
                     // margin application
                     var totalCents = (cost + printItem.Value.Value * marginMultiplier) * CentsPerDollar;
-                    // rounding to even cents, MidpointRounding.ToEven have choosen only for "banking/financial concept" as a best option to middle point round decision in such type of context
+                    // rounding to even cents, MidpointRounding.ToEven has choosen only for "banking/financial concept" as a best option to middle point round decision in such type of context
                     total += Math.Round(totalCents/2, 0, MidpointRounding.ToEven) * 2 / CentsPerDollar; 
                 }
 
-                respone.Total = total;
-                return respone;
+                result.Total = total;
+                return result;
             }
             catch (ArithmeticException arithmeticException)
             {                
-                throw new CalculationExcpetion("Unable to parform calculations. Please contact system adimistrator", arithmeticException);
+                throw new CalculationExcpetion("Unable to parform calculations. Please contact system adimistrator", arithmeticException); // contact admin means 'go to app logs'
             }
         }
     }
