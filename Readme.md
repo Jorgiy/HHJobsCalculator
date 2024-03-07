@@ -29,3 +29,4 @@ Project could be puclished to a docker container. Code are compatible with Linux
 To create docker image it is just need to run ```docker build -t hhjobscalculator -f %full folder path to \HHJobsCalculator.WebApi\Dockerfile file% .``` from the root solution folder (!).
 To compose a docker container you need to firstly setup a Kerberos developer self-signed certificate: [Instruction](https://learn.microsoft.com/en-us/aspnet/core/security/docker-https?view=aspnetcore-6.0).
 Then substitute ```%password_placeholder%``` in ```docker-compose.yml``` with an actual self-signed secret and run ```docker-compose -f "docker-compose.yml" up -d``` from the HHJobsCalculator.WebApi folder. 
+HTTPS and HTTP (which will generate protocol error each time POST /api/v1/Jobs called) ports will be provided in a container.
